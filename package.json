@@ -1,0 +1,13 @@
+{
+  "name": "a-common-sense-guide-to-data-structures-and-algorithms",
+  "description": "The Pragmatic Programmers: A common-sense guide to data structures and algorithms",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "tape src/**/*.test.js"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "tape": "^5.6.3"
+  }
+}
