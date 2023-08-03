@@ -4,10 +4,11 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "test": "tape src/**/*.test.js"
+    "test": "tape src/**/*.test.js | tap-spec"
   },
   "devDependencies": {
     "jest": "^29.5.0",
+    "tap-spec": "^5.0.0",
     "tape": "^5.6.3"
   }
 }
