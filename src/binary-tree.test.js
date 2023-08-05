@@ -1,6 +1,6 @@
 import { test } from "tape";
 
-import { TreeNode, search, insert, remove } from "./binary-tree.js";
+import { TreeNode, search, insert, remove, print } from "./binary-tree.js";
 
 test("binary tree should search", t => {
     t.plan(1);
@@ -179,4 +179,20 @@ test("binary tree should remove node with two children", t => {
     t.notOk(search(10, root));
     t.ok(search(4, root));
     t.ok(search(11, root));
+});
+
+test("binary tree should remove node with two children", t => {
+    t.plan(1);
+
+    const root = new TreeNode("Moby Dick");
+
+    insert("Great Expectations", root);
+    insert("Robinson Crusoe", root);
+    insert("Alice in Wonderland", root);
+    insert("Lord of the Flies", root);
+    insert("Pride and Prejudice", root);
+    insert("The Odyssey", root);
+
+    print(root);
+    t.pass();
 });

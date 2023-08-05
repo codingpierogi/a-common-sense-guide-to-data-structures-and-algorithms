@@ -62,4 +62,14 @@ export function remove(data, node) {
         }
     }
 }
+
+export function print(node) {
+    if (!node) {
+        return;
+    }
+
+    print(node.left);
+    console.log(node.data);
+    print(node.right);
+}
  
