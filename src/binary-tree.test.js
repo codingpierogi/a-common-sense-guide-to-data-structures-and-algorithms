@@ -181,7 +181,7 @@ test("binary tree should remove node with two children", t => {
     t.ok(search(11, root));
 });
 
-test("binary tree should remove node with two children", t => {
+test("binary tree should print", t => {
     t.plan(1);
 
     const root = new TreeNode("Moby Dick");
